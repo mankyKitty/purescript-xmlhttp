@@ -1,0 +1,17 @@
+{
+  "name": "purescript-xmlhttp",
+  "version": "0.0.1",
+  "homepage": "https://github.com/mankyKitty/purescript-xmlhttp",
+  "authors": [
+    "Sean Chalmers <sclhiannan@gmail.com>"
+  ],
+  "description": "Barebones library for using XMLHttpRequests in PureScript",
+  "license": "MIT",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ]
+}
