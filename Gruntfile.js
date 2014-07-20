@@ -1,28 +1,24 @@
 module.exports = function(grunt) {
     "use strict";
 
-    var srcDirs = ["src/**/*.purs", "src/**/*.purs.hs", "bower_components/**/src/**/*.purs"];
+    var srcDirs = ["src/Network/**/*.purs.hs",
+                   "bower_components/purescript-*/src/**/*.purs"
+                  ];
 
     grunt.initConfig({
 	      psc: {
 	          options: {
-		            main: "XMLHttpRequest",
-		            modules: ["XMLHttpRequest"]
+                tco: true,
+                magicDo: true
 	          },
-	          all: {
-		            src: srcDirs,
-		            dest: "dist/Main.js"
-	          }
-	      },
-	      dotPsci: {
-	          all: {
+	          lib: {
 		            src: srcDirs,
 	          }
 	      },
         watch: {
             scripts: {
                 files: srcDirs,
-                tasks: ["psc:all", "dotPsci:all"],
+                tasks: ["psc:lib"],
             },
         },
     });
@@ -30,5 +26,5 @@ module.exports = function(grunt) {
     grunt.loadNpmTasks("grunt-purescript");
     grunt.loadNpmTasks('grunt-contrib-watch');
 
-    grunt.registerTask("default", ["psc:all", "dotPsci:all"]);
+    grunt.registerTask("default", ["psc:lib"]);
 };
