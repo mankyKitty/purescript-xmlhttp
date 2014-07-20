@@ -1,0 +1,29 @@
+{
+  "name": "purescript-xmlhttp",
+  "version": "0.0.1",
+  "description": "Barebones lib for using XMLHttpRequest with PureScript",
+  "main": "Gruntfile.js",
+  "directories": {
+    "example": "examples"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/mankyKitty/purescript-xmlhttp.git"
+  },
+  "author": "Sean Chalmers",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/mankyKitty/purescript-xmlhttp/issues"
+  },
+  "homepage": "https://github.com/mankyKitty/purescript-xmlhttp",
+  "dependencies": {
+    "bower": "^1.3.8",
+    "grunt": "^0.4.5",
+    "grunt-cli": "^0.1.13",
+    "grunt-contrib-watch": "^0.6.1",
+    "grunt-purescript": "^0.5.1"
+  }
+}
